@@ -1,15 +1,15 @@
 import React from 'react';
-import Button from './button';
-import Display from './display';
+import Button from '../../components/button';
+import Display from '../../components/display';
 
-class SimpleGolden extends React.Component {
+class StatesApp extends React.Component {
   constructor() {
     super();
     this.state = {
       amount: 0,
     };
-    // this.buy = this.buy.bind(this);
-    // this.eat = this.eat.bind(this);
+    this.buy = this.buy.bind(this);
+    this.eat = this.eat.bind(this);
   }
 
   componentDidMount() {
@@ -23,9 +23,9 @@ class SimpleGolden extends React.Component {
   }
 
 
-  // buy() {
-  //   this.setState(prev => ({ amount: prev.amount + 1 }));
-  // }
+  buy() {
+    this.setState(prev => ({ amount: prev.amount + 1 }));
+  }
 
 //   changeAmount(parameter) {
 //     const { amount } = this.state;
@@ -42,12 +42,12 @@ class SimpleGolden extends React.Component {
 //     };
 //   }
 
-  // eat() {
-  //   const { amount } = this.state;
-  //   if (amount > 0) {
-  //     this.setState(prev => ({ amount: prev.amount - 1 }));
-  //   }
-  // }
+  eat() {
+    const { amount } = this.state;
+    if (amount > 0) {
+      this.setState(prev => ({ amount: prev.amount - 1 }));
+    }
+  }
 
   render() {
     const { amount } = this.state;
@@ -61,4 +61,4 @@ class SimpleGolden extends React.Component {
   }
 }
 
-export default SimpleGolden;
+export default StatesApp;

@@ -8,7 +8,7 @@ export default function todoApp(amount = 0, action) {
     case BUY_ONE:
       return amount + action.amount;
     case EAT_ONE:
-      return amount === 0 ? 0 : amount - action.amount;
+      return amount === 0 ? 0 : amount + action.amount;
     default:
       return amount;
   }

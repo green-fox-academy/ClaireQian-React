@@ -6,7 +6,7 @@ const mapStateToProps = () => ({ str: 'Buy one' });
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: () => {
+    func: () => {
       dispatch(buyOne(1));
     },
   };
