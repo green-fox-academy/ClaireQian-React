@@ -5,20 +5,20 @@ import StatesApp from './simple/states/StatesApp';
 
 const FirstLevelHeading = () => (
   <div>
-    <h1>Golden Acorn is life 🌰</h1>
+    <span role="img" aria-label="lol">Golden Acorn is life 🌰</span>
   </div>
 );
 
 const OperateReduxApp = () => (
   <div>
-    <h1>Golden Acorn Application with redux 🌰</h1>
+    <span role="img" aria-label="lol">Golden Acorn Application with redux 🌰</span>
     <ReduxApp />
   </div>
 );
 
 const OperateStatesApp = () => (
   <div>
-    <h1>Golden Acorn Application with state 🌰</h1>
+    <span role="img" aria-label="lol">Golden Acorn Application with state 🌰</span>
     <StatesApp />
   </div>
 );
